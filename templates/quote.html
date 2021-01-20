@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+<h6>Here you can check price of one share of any companies</h6><br>
+    <form class="box" action="/quote" method="post">
+        <input autocomplete="off" name="symbol" placeholder="Symbol" type="text">
+        <input type="submit" value="Check">
+    </form>
+{% endblock %}

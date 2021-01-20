@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block title %}
+    Result
+{% endblock %}
+
+{% block main %}
+    <table>
+        <tr>
+            <th>Company Name</th>
+            <th>Latest Price</th>
+            <th>Symbol</th>
+        </tr>
+        <tr>
+            <td>{{ quote["name"] }}</td>
+            <td>{{ quote["price"] }}</td>
+            <td>{{ quote["symbol"] }}</td>
+        </tr>
+    </table>
+{% endblock %}
